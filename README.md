@@ -1,5 +1,4 @@
 # Macro-State-Sentiment-Lead
-Investigates whether news sentiment changes lead latent macroeconomic state shifts, and by how much.
 
 ## Overview
 Uses a collection of macroeconomic variables to infer latent (hidden) macro states/regimes at given points in time using a Hidden Markov Model. Each state is then manually labelled using the mean values for each variable for each state (e.g. - a state with an upward yield curve, steady/target inflation, low volatility, high economic activity would be labelled as 'steady expansion' or 'goldilocks'). Separately, historical news headlines are ingested and an LLM is used to classify the prevailing sentiment over time. Lead-lag analysis is then conducted to determine if the sentiment change preceded the corresponding regime shift, and by how much.
