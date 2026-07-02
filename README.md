@@ -1,4 +1,4 @@
-# Market-State-Sentiment-Lead
+# Market-State-Sentiment-Lead-Lag-Analysis
 
 ## Overview
 Uses a collection of macroeconomic variables to infer latent (hidden) macro states/regimes at given points in time using a Hidden Markov Model. Each state is then manually labelled using the mean values for each variable for each state (e.g. - a state with an upward yield curve, steady/target inflation, low volatility, high economic activity, tightening labour market would be labelled as 'steady expansion' or 'goldilocks'). Separately, historical news headlines are ingested and an LLM is used to classify the prevailing sentiment over time. Lead-lag analysis is then conducted to determine if the sentiment change preceded the corresponding regime shift, and by how much.
