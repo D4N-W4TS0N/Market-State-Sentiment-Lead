@@ -21,7 +21,7 @@ Then all data is normalised using a rolling z-score. For each day the mean and s
 The data is arranged where each column is a variable, and each row a date. The K value is then determined - which tells the model how many states to create; might use BIC to select K, or just pick (4-5 should work fine). The model then returns the emission paramters (mean and variance for each state), and the probabilities of moving between states. Then run Viterbi  to get the most probable state for each data - giving a time series of market states. I used BIC, it gave too high a number so I chose 4.
 
 ## Determining the states
-The model simply returns state 0 or 1 for each data - obviously offering no insight into what each state actually is. For each state, I'll manually inspect the parameters for each variable (mean indicates what state, variance indicates the reliability - if high then the model lacks confidence), aswell as cross check known state changes in history. Or use an LLM to do it.
+The model simply returns state 0 or 1 for each data - obviously offering no insight into what each state actually is. For each state, I'll manually inspect the parameters for each variable (mean indicates what state, variance indicates the reliability - if high then the model lacks confidence), aswell as cross check known state changes in history. Or use an LLM to do it. The results are below.
 
 <img width="616" height="180" alt="image" src="https://github.com/user-attachments/assets/45d72e11-5f57-4958-b4b9-b98b1491a6f2" />
 
