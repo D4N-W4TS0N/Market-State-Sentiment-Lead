@@ -35,6 +35,7 @@ State 3 is is early recovery/expansion - strong labour market, steep upward curv
 
 Some concerns with the models output - 2024/2025 partially measured as crisis/recession when it was not; suggests state 1 may not be hard recession  but general stress. Also, state 3 does not distinguish genuine growth from post-crisis stabilisation. May signal the need for credit spreads as a variable to differentiate them.
 
+## News ingestion
 
 
 
