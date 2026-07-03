@@ -35,7 +35,10 @@ State 3 is is early recovery/expansion - strong labour market, steep upward curv
 
 Some concerns with the models output - 2024/2025 partially measured as crisis/recession when it was not; suggests state 1 may not be hard recession  but general stress. Also, state 3 does not distinguish genuine growth from post-crisis stabilisation. May signal the need for credit spreads as a variable to differentiate them.
 
-## News ingestion
+## News classification
+I'll use  GDELT to source, as its the only free-ish news source that goes back far enough. Even, so it is only supported back to 2015. The data will be fetched in BigQuery, then exported into a csv file - to give a sample of 2 headlines per day, every day since 2015. Since its implausible to visit each url, the news will be classified based on the url contents themselves. Some sources have very clear url 'slugs', where some are unreadable - like FT and Reuters, so I'll filter out these sources.
+
+I'll then use Groq (an LLM with a decent free tier) to classify the headlines such that each day's prevailing sentiment is set to one of 4 themes - i.e. the themes returned by the HMM (whichever matches best on that given day).
 
 
 
