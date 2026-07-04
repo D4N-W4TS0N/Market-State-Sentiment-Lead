@@ -42,6 +42,7 @@ I scrape the html links from the fomc calendar website, then extract the date an
 
 The output appears plausible; recession/stress dominates discussions in early 2021, before shifting towards inflation/tightening as spending post covid hiked inflationary pressure.
 
+## Lead-Lag analysis on Fed sentiment vs market state
 
 
 
