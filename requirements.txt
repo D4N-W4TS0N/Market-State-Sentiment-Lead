@@ -1,0 +1,8 @@
+pandas==3.0.3
+requests==2.34.2
+tqdm==4.68.3
+python-dotenv==1.2.2
+fredapi==0.5.2
+yfinance==1.5.1
+hmmlearn==0.3.3
+beautifulsoup4==4.15.0
